@@ -1,37 +1,39 @@
-# Emacs Org Instant Preview
+# Emacs LaTeX Live Preview
 
-A portable Emacs Org Mode setup with instant HTML preview and auto-refresh functionality.
+A portable Emacs LaTeX setup featuring instant HTML preview and auto-refresh powered by LaTeXML.
 
 ## Features
 
-- Automatic HTML export on save
-- Instant preview using Emacs' built-in `eww` browser
-- Auto-refresh preview on each save
-- Automatic package installation
-- Maximized Emacs window on startup
+- Automatic LaTeX to HTML conversion on save (using LaTeXML)
+- Live preview within Emacs using the `eww` browser
+- Seamless preview updates with each save
+- Automatic installation of required Emacs packages 
+- Maximized Emacs window on startup for focused editing
 
 ## Installation
 
-1. Clone this repository:
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/myOverleafPapers/emacs-latex-live-preview
    ```
-   git clone https://github.com/Foadsf/emacs-org-instant-preview
-   ```
-2. Copy the `.dir-locals.el` file to your Org Mode project directory.
+2. **Copy Configuration:** Copy the `.dir-locals.el` file to the root directory of your LaTeX project.
 
 ## Usage
 
-1. Open any `.org` file in the directory containing the `.dir-locals.el` file.
-2. Emacs will automatically maximize, export the Org file to HTML, and show a preview.
-3. As you edit and save the Org file, the preview will automatically update.
+1. **Open `main.tex`:** Open the `main.tex` file of your LaTeX project in Emacs.
+2. **Automatic Setup:** Emacs will automatically maximize, convert your LaTeX to HTML, and display a live preview in a split window.
+3. **Real-time Updates:** As you write and save your LaTeX code, the preview will refresh automatically.
 
 ## Requirements
 
 - Emacs 25.1 or later
 - Internet connection (for initial package installation)
+- LaTeXML installed on your system ([https://latexml.github.io/](https://latexml.github.io/)) and added to your PATH
 
 ## Customization
 
-You can modify the `.dir-locals.el` file to change the behavior or add more functionality.
+- **`.dir-locals.el`:**  Feel free to adjust the settings in this file to tailor the behavior to your liking.
+- **LaTeXML Command:** The `latexmlmath` command is used by default for conversion. If your LaTeXML installation requires a different command, update the `refresh-latex-html-preview` function accordingly.
 
 ## License
 
@@ -39,11 +41,12 @@ This project is licensed under the WTFPL - see the [LICENSE](https://en.wikipedi
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are most welcome! 
 
 ## Acknowledgements
 
 - The Emacs community
-- Org Mode developers
+- AUCTeX, RefTeX, and other amazing Emacs packages
+- The LaTeXML developers
 
-Enjoy your enhanced Org Mode experience!
+Enjoy an enhanced LaTeX writing experience!

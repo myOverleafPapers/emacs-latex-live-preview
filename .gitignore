@@ -1,11 +1,43 @@
-# Ignore HTML files
-*.html
+# Compiled LaTeX output
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.dvi
+*.ps
+*.pdf
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.brf
+*.cb
+*.ind
+*.idx
+*.ilg
+*.inx
+*.bbl 
+*.synctex.gz
+*.lof  
+*.lot  
 
-# Ignore Emacs backup files
+# Editor backups
 *~
+.*.sw?
 
-# Ignore auto-save files
+# Auto-save files
 \#*\#
 
-# Ignore .DS_Store files on macOS
+# macOS artifacts
 .DS_Store
+
+# If using Git on Windows, consider these:
+Thumbs.db
+*.suo 
+
+# LaTeX-specific temporary/cache files (adjust if needed)
+*.latexmain
+*.latex2html
+*.tpm
